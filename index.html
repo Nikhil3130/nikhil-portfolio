@@ -2,698 +2,1155 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nikhil Thomandru | AI Developer Portfolio</title>
+    <title>Nikhil Thomandru — AI Developer</title>
 
     <meta name="description"
-        content="Nikhil Thomandru - B.Tech CSE Student and Aspiring AI & Generative AI Developer">
+        content="Nikhil Thomandru | B.Tech CSE Student | Aspiring AI & Generative AI Developer">
+
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Font -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Icons -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 
 <body>
 
-    <!-- Animated Background -->
-    <div class="background">
-        <div class="orb orb1"></div>
-        <div class="orb orb2"></div>
-        <div class="orb orb3"></div>
-        <div class="grid-background"></div>
+<!-- =====================================================
+     PRELOADER
+===================================================== -->
+
+<div id="loader">
+
+    <div class="loader-logo">
+        N<span>.</span>
     </div>
 
-    <!-- Cursor Glow -->
-    <div class="cursor-glow"></div>
+    <div class="loader-bar">
+        <div></div>
+    </div>
 
-    <!-- NAVIGATION -->
-    <header class="navbar">
+    <p>INITIALIZING PORTFOLIO...</p>
 
-        <a href="#home" class="logo">
-            N<span>.</span>
+</div>
+
+
+<!-- =====================================================
+     BACKGROUND
+===================================================== -->
+
+<div id="canvas-container"></div>
+
+<div class="noise"></div>
+
+<div class="aurora aurora-1"></div>
+<div class="aurora aurora-2"></div>
+<div class="aurora aurora-3"></div>
+
+
+<!-- =====================================================
+     CURSOR
+===================================================== -->
+
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <a href="#home" class="logo">
+        N<span>.</span>
+    </a>
+
+
+    <nav class="navigation">
+
+        <a href="#home" class="nav-link active">HOME</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+        <a href="#skills" class="nav-link">SKILLS</a>
+        <a href="#projects" class="nav-link">PROJECTS</a>
+        <a href="#education" class="nav-link">EDUCATION</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+
+    </nav>
+
+
+    <a href="#contact" class="connect-button">
+
+        <span>Let's Connect</span>
+
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+    </a>
+
+
+    <button class="mobile-menu">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section id="home" class="hero">
+
+
+    <div class="hero-content reveal">
+
+
+        <div class="status">
+
+            <span class="status-dot"></span>
+
+            AVAILABLE FOR OPPORTUNITIES
+
+        </div>
+
+
+        <p class="hero-tag">
+
+            <span>01</span>
+            / AI & GENERATIVE AI DEVELOPER
+
+        </p>
+
+
+        <h1>
+
+            Building
+
+            <span class="outline-text">
+                Intelligent
+            </span>
+
+            <br>
+
+            Digital
+            <span class="gradient-text">
+                Experiences.
+            </span>
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            I'm <strong>Nikhil Thomandru</strong> —
+            a Computer Science & Engineering student
+            exploring Artificial Intelligence, Generative AI
+            and modern software development.
+
+        </p>
+
+
+        <div class="hero-actions">
+
+            <a href="#projects" class="magnetic primary">
+
+                <span>Explore My Work</span>
+
+                <i class="fa-solid fa-arrow-down"></i>
+
+            </a>
+
+
+            <a href="#contact" class="magnetic secondary">
+
+                <span>Let's Talk</span>
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+
+        <div class="hero-socials">
+
+            <a href="https://www.linkedin.com/in/nikhil-thomandru-16660b3b5"
+                target="_blank">
+
+                <i class="fa-brands fa-linkedin-in"></i>
+
+            </a>
+
+
+            <a href="mailto:nikhilthomandru@gmail.com">
+
+                <i class="fa-solid fa-envelope"></i>
+
+            </a>
+
+
+            <a href="#projects">
+
+                <i class="fa-solid fa-code"></i>
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =================================================
+         3D VISUAL
+    ================================================= -->
+
+    <div class="hero-visual reveal">
+
+
+        <div class="visual-label label-top">
+
+            <span></span>
+            AI SYSTEM ONLINE
+
+        </div>
+
+
+        <div class="ai-core">
+
+            <div class="core-ring ring-1"></div>
+            <div class="core-ring ring-2"></div>
+            <div class="core-ring ring-3"></div>
+
+
+            <div class="core">
+
+                <div class="core-inner">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                    <span>AI</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="orbit-object object-1">
+
+                <i class="fa-brands fa-python"></i>
+
+            </div>
+
+
+            <div class="orbit-object object-2">
+
+                <i class="fa-brands fa-java"></i>
+
+            </div>
+
+
+            <div class="orbit-object object-3">
+
+                <i class="fa-solid fa-code"></i>
+
+            </div>
+
+
+            <div class="orbit-object object-4">
+
+                <i class="fa-solid fa-microchip"></i>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="visual-label label-bottom">
+
+            <span></span>
+            SYSTEM // LEARNING
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MARQUEE
+===================================================== -->
+
+<div class="marquee">
+
+    <div class="marquee-track">
+
+        <span>ARTIFICIAL INTELLIGENCE</span>
+        <b>✦</b>
+
+        <span>GENERATIVE AI</span>
+        <b>✦</b>
+
+        <span>SOFTWARE DEVELOPMENT</span>
+        <b>✦</b>
+
+        <span>PROBLEM SOLVING</span>
+        <b>✦</b>
+
+        <span>ARTIFICIAL INTELLIGENCE</span>
+        <b>✦</b>
+
+        <span>GENERATIVE AI</span>
+        <b>✦</b>
+
+        <span>SOFTWARE DEVELOPMENT</span>
+        <b>✦</b>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section id="about" class="section">
+
+
+    <div class="section-header reveal">
+
+        <p class="section-number">02 — ABOUT</p>
+
+        <h2>
+
+            Curious mind.
+            <br>
+
+            <span>Builder's mindset.</span>
+
+        </h2>
+
+    </div>
+
+
+    <div class="about-layout">
+
+
+        <div class="about-main reveal">
+
+            <p class="large-text">
+
+                I'm a Computer Science and Engineering student
+                passionate about understanding how technology can
+                solve real-world problems.
+
+            </p>
+
+
+            <p>
+
+                I have a strong foundation in C, Java, Python
+                and HTML, with a growing interest in Artificial
+                Intelligence, Generative AI and software development.
+
+            </p>
+
+
+            <p>
+
+                I enjoy experimenting with ideas, solving
+                programming problems and transforming concepts
+                into practical applications.
+
+            </p>
+
+        </div>
+
+
+        <div class="about-cards reveal">
+
+
+            <div class="glass-card">
+
+                <div class="card-icon">
+
+                    <i class="fa-solid fa-brain"></i>
+
+                </div>
+
+                <h3>AI Explorer</h3>
+
+                <p>
+                    Exploring Artificial Intelligence
+                    and Generative AI.
+                </p>
+
+            </div>
+
+
+            <div class="glass-card">
+
+                <div class="card-icon">
+
+                    <i class="fa-solid fa-terminal"></i>
+
+                </div>
+
+                <h3>Problem Solver</h3>
+
+                <p>
+                    Turning complex problems into
+                    logical solutions.
+                </p>
+
+            </div>
+
+
+            <div class="glass-card">
+
+                <div class="card-icon">
+
+                    <i class="fa-solid fa-rocket"></i>
+
+                </div>
+
+                <h3>Future Builder</h3>
+
+                <p>
+                    Building practical technology
+                    for tomorrow.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SKILLS
+===================================================== -->
+
+<section id="skills" class="section">
+
+
+    <div class="section-header reveal">
+
+        <p class="section-number">03 — SKILLS</p>
+
+        <h2>
+
+            My technical
+
+            <span>arsenal.</span>
+
+        </h2>
+
+    </div>
+
+
+    <div class="skills-showcase">
+
+
+        <div class="skill-orbit reveal">
+
+
+            <div class="skill-center">
+
+                <i class="fa-solid fa-code"></i>
+
+                <span>CODE</span>
+
+            </div>
+
+
+            <div class="skill-node node-c">
+
+                <i class="fa-solid fa-c"></i>
+
+                <span>C</span>
+
+            </div>
+
+
+            <div class="skill-node node-java">
+
+                <i class="fa-brands fa-java"></i>
+
+                <span>JAVA</span>
+
+            </div>
+
+
+            <div class="skill-node node-python">
+
+                <i class="fa-brands fa-python"></i>
+
+                <span>PYTHON</span>
+
+            </div>
+
+
+            <div class="skill-node node-html">
+
+                <i class="fa-brands fa-html5"></i>
+
+                <span>HTML</span>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="skills-list reveal">
+
+
+            <div class="skill-row">
+
+                <div class="skill-title">
+
+                    <span>C</span>
+                    <small>PROGRAMMING</small>
+
+                </div>
+
+                <div class="skill-line">
+                    <div style="--width:82%"></div>
+                </div>
+
+                <span class="skill-percent">82</span>
+
+            </div>
+
+
+            <div class="skill-row">
+
+                <div class="skill-title">
+
+                    <span>Java</span>
+                    <small>PROGRAMMING</small>
+
+                </div>
+
+                <div class="skill-line">
+                    <div style="--width:76%"></div>
+                </div>
+
+                <span class="skill-percent">76</span>
+
+            </div>
+
+
+            <div class="skill-row">
+
+                <div class="skill-title">
+
+                    <span>Python</span>
+                    <small>PROGRAMMING</small>
+
+                </div>
+
+                <div class="skill-line">
+                    <div style="--width:78%"></div>
+                </div>
+
+                <span class="skill-percent">78</span>
+
+            </div>
+
+
+            <div class="skill-row">
+
+                <div class="skill-title">
+
+                    <span>HTML</span>
+                    <small>WEB</small>
+
+                </div>
+
+                <div class="skill-line">
+                    <div style="--width:86%"></div>
+                </div>
+
+                <span class="skill-percent">86</span>
+
+            </div>
+
+
+            <div class="interest-box">
+
+                <span>FOCUS</span>
+
+                <div>
+
+                    <b>AI</b>
+                    <b>GENERATIVE AI</b>
+                    <b>SOFTWARE</b>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROJECTS
+===================================================== -->
+
+<section id="projects" class="section projects-section">
+
+
+    <div class="section-header reveal">
+
+        <p class="section-number">04 — PROJECTS</p>
+
+        <h2>
+
+            Ideas turned
+
+            <span>real.</span>
+
+        </h2>
+
+    </div>
+
+
+    <div class="projects-grid">
+
+
+        <!-- PROJECT 1 -->
+
+        <article class="project-card project-card-large reveal">
+
+
+            <div class="project-background">
+
+                <div class="project-circle"></div>
+
+                <i class="fa-solid fa-heart-pulse project-bg-icon"></i>
+
+            </div>
+
+
+            <div class="project-top">
+
+                <span>01 / AI</span>
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <p class="project-type">
+                    ARTIFICIAL INTELLIGENCE
+                </p>
+
+                <h3>
+                    GramCare <span>AI</span>
+                </h3>
+
+                <p class="project-subtitle">
+                    Multilingual Rural Healthcare
+                    Screening Platform
+                </p>
+
+                <p class="project-description">
+
+                    AI-focused healthcare screening platform
+                    designed to support rural users through
+                    multilingual and accessible digital interaction.
+
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>AI</span>
+                    <span>Healthcare</span>
+                    <span>Multilingual</span>
+
+                </div>
+
+            </div>
+
+
+        </article>
+
+
+        <!-- PROJECT 2 -->
+
+        <article class="project-card reveal">
+
+
+            <div class="project-top">
+
+                <span>02 / SOFTWARE</span>
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </div>
+
+
+            <div class="project-icon-large">
+
+                <i class="fa-solid fa-bug"></i>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <p class="project-type">
+                    SOFTWARE DEVELOPMENT
+                </p>
+
+                <h3>DebugPro</h3>
+
+                <p class="project-subtitle">
+                    Program Debugging Tool
+                </p>
+
+                <p class="project-description">
+
+                    A software development tool designed
+                    to assist users in identifying and
+                    resolving programming errors.
+
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>Programming</span>
+                    <span>Debugging</span>
+
+                </div>
+
+            </div>
+
+
+        </article>
+
+
+        <!-- PROJECT 3 -->
+
+        <article class="project-card reveal">
+
+
+            <div class="project-top">
+
+                <span>03 / WEB</span>
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </div>
+
+
+            <div class="weather-animation">
+
+                <div class="sun"></div>
+
+                <div class="cloud"></div>
+
+            </div>
+
+
+            <div class="project-content">
+
+                <p class="project-type">
+                    WEB APPLICATION
+                </p>
+
+                <h3>Weather Forecast</h3>
+
+                <p class="project-subtitle">
+                    Weather Information Application
+                </p>
+
+                <p class="project-description">
+
+                    Application for checking weather
+                    information for different cities
+                    with convenient forecast details.
+
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>HTML</span>
+                    <span>Web</span>
+                    <span>Weather</span>
+
+                </div>
+
+            </div>
+
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EDUCATION
+===================================================== -->
+
+<section id="education" class="section">
+
+
+    <div class="section-header reveal">
+
+        <p class="section-number">05 — EDUCATION</p>
+
+        <h2>
+
+            The journey
+
+            <span>so far.</span>
+
+        </h2>
+
+    </div>
+
+
+    <div class="education-timeline">
+
+
+        <div class="education-item reveal">
+
+            <div class="education-year">
+                2024 — 2028
+            </div>
+
+
+            <div class="education-line">
+
+                <div class="education-dot"></div>
+
+            </div>
+
+
+            <div class="education-info">
+
+                <p>BACHELOR OF TECHNOLOGY</p>
+
+                <h3>
+                    Computer Science & Engineering
+                </h3>
+
+                <span>
+                    Dhanekula Institute of Engineering
+                    and Technology
+                </span>
+
+                <div class="education-grade">
+
+                    CGPA
+
+                    <strong>7.9 / 10.0</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="education-item reveal">
+
+            <div class="education-year">
+                INTERMEDIATE
+            </div>
+
+
+            <div class="education-line">
+
+                <div class="education-dot"></div>
+
+            </div>
+
+
+            <div class="education-info">
+
+                <p>MPC / INTERMEDIATE</p>
+
+                <h3>
+                    Sri Chaitanya Junior College
+                </h3>
+
+                <span>
+                    Eluru
+                </span>
+
+                <div class="education-grade">
+
+                    SCORE
+
+                    <strong>96%</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="education-item reveal">
+
+            <div class="education-year">
+                10TH CLASS
+            </div>
+
+
+            <div class="education-line">
+
+                <div class="education-dot"></div>
+
+            </div>
+
+
+            <div class="education-info">
+
+                <p>SECONDARY EDUCATION</p>
+
+                <h3>
+                    Government High School
+                </h3>
+
+                <span>
+                    Akunur
+                </span>
+
+                <div class="education-grade">
+
+                    SCORE
+
+                    <strong>84%</strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     TRAINING
+===================================================== -->
+
+<section class="section">
+
+
+    <div class="training-panel reveal">
+
+
+        <div class="training-symbol">
+
+            <i class="fa-solid fa-robot"></i>
+
+        </div>
+
+
+        <div>
+
+            <p class="section-number">
+                TRAINING
+            </p>
+
+            <h2>
+                Calibo AI Academy
+            </h2>
+
+            <p>
+
+                AI and technical skills training focused
+                on programming and Artificial Intelligence.
+
+            </p>
+
+        </div>
+
+
+        <div class="training-badge">
+
+            <i class="fa-solid fa-certificate"></i>
+
+            AI TRAINING
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section id="contact" class="contact">
+
+
+    <div class="contact-orbit orbit-contact-1"></div>
+    <div class="contact-orbit orbit-contact-2"></div>
+
+
+    <div class="contact-content reveal">
+
+
+        <p class="section-number">
+            06 — CONTACT
+        </p>
+
+
+        <h2>
+
+            Let's create
+
+            <span>
+                something extraordinary.
+            </span>
+
+        </h2>
+
+
+        <p>
+
+            Have an opportunity, idea or project?
+            Let's connect and build something meaningful.
+
+        </p>
+
+
+        <div class="contact-actions">
+
+
+            <a href="mailto:nikhilthomandru@gmail.com"
+                class="contact-button">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                nikhilthomandru@gmail.com
+
+            </a>
+
+
+            <a href="https://www.linkedin.com/in/nikhil-thomandru-16660b3b5"
+                target="_blank"
+                class="contact-button">
+
+                <i class="fa-brands fa-linkedin-in"></i>
+
+                LinkedIn
+
+            </a>
+
+        </div>
+
+
+        <div class="contact-phone">
+
+            <i class="fa-solid fa-phone"></i>
+
+            9951616991
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+
+    <div class="footer-logo">
+
+        N<span>.</span>
+
+    </div>
+
+
+    <p>
+
+        Designed & built by
+        <strong>Nikhil Thomandru</strong>
+
+    </p>
+
+
+    <div class="footer-social">
+
+        <a href="https://www.linkedin.com/in/nikhil-thomandru-16660b3b5"
+            target="_blank">
+
+            <i class="fa-brands fa-linkedin-in"></i>
+
         </a>
 
-        <nav>
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#education" class="nav-link">Education</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#projects" class="nav-link">Projects</a>
-            <a href="#training" class="nav-link">Training</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </nav>
+        <a href="mailto:nikhilthomandru@gmail.com">
 
-        <a href="#contact" class="nav-button">
-            Let's Talk <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <i class="fa-solid fa-envelope"></i>
+
         </a>
 
-        <button class="menu-btn">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+    </div>
 
-    </header>
 
+</footer>
 
-    <!-- HERO -->
-    <main>
 
-        <section id="home" class="hero">
+<script src="script.js"></script>
 
-            <div class="hero-left reveal">
+</body>
 
-                <div class="availability">
-                    <span class="pulse"></span>
-                    Available for opportunities
-                </div>
-
-                <p class="eyebrow">
-                    <span>//</span> B.Tech CSE Student
-                </p>
-
-                <h1>
-                    Building the
-                    <span class="gradient-text">Future</span>
-                    with AI.
-                </h1>
-
-                <p class="hero-description">
-                    Hi, I'm <strong>Nikhil Thomandru</strong>.
-                    An aspiring AI & Generative AI Developer passionate
-                    about programming, intelligent systems and creating
-                    practical software solutions.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="#projects" class="primary-btn">
-                        Explore Projects
-                        <i class="fa-solid fa-arrow-down"></i>
-                    </a>
-
-                    <a href="#contact" class="outline-btn">
-                        Contact Me
-                    </a>
-
-                </div>
-
-                <div class="social-links">
-
-                    <a href="https://www.linkedin.com/in/nikhil-thomandru-16660b3b5"
-                        target="_blank">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-
-                    <a href="#contact">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-
-                    <a href="#projects">
-                        <i class="fa-solid fa-code"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- HERO VISUAL -->
-            <div class="hero-right reveal">
-
-                <div class="profile-orbit">
-
-                    <div class="orbit orbit-one"></div>
-                    <div class="orbit orbit-two"></div>
-
-                    <div class="center-card">
-
-                        <div class="ai-symbol">
-                            <span>&lt;</span>
-                            <i class="fa-solid fa-brain"></i>
-                            <span>/&gt;</span>
-                        </div>
-
-                        <h3>NIKHIL</h3>
-                        <p>AI • CODE • INNOVATION</p>
-
-                    </div>
-
-                    <div class="floating-icon icon1">
-                        <i class="fa-brands fa-python"></i>
-                    </div>
-
-                    <div class="floating-icon icon2">
-                        <i class="fa-brands fa-java"></i>
-                    </div>
-
-                    <div class="floating-icon icon3">
-                        <i class="fa-solid fa-microchip"></i>
-                    </div>
-
-                    <div class="floating-icon icon4">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- STATS -->
-        <section class="stats-section">
-
-            <div class="stats-card">
-
-                <div class="stat">
-                    <strong>3+</strong>
-                    <span>Projects</span>
-                </div>
-
-                <div class="stat-line"></div>
-
-                <div class="stat">
-                    <strong>4</strong>
-                    <span>Programming Skills</span>
-                </div>
-
-                <div class="stat-line"></div>
-
-                <div class="stat">
-                    <strong>7.9</strong>
-                    <span>CGPA</span>
-                </div>
-
-                <div class="stat-line"></div>
-
-                <div class="stat">
-                    <strong>AI</strong>
-                    <span>Focus Area</span>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ABOUT -->
-        <section id="about" class="section">
-
-            <div class="section-heading reveal">
-
-                <p class="section-label">// ABOUT ME</p>
-
-                <h2>
-                    Turning curiosity into
-                    <span>technology.</span>
-                </h2>
-
-            </div>
-
-            <div class="about-grid">
-
-                <div class="about-text reveal">
-
-                    <p>
-                        I am a Computer Science and Engineering student at
-                        Dhanekula Institute of Engineering and Technology.
-                        I have a strong foundation in C, Java, Python and HTML.
-                    </p>
-
-                    <p>
-                        My interests include Artificial Intelligence,
-                        Generative AI, programming and software development.
-                        I enjoy solving problems, exploring technology and
-                        building practical applications.
-                    </p>
-
-                    <p>
-                        My goal is to grow as an AI-focused software developer
-                        and contribute to meaningful technology solutions.
-                    </p>
-
-                </div>
-
-                <div class="about-cards reveal">
-
-                    <div class="mini-card">
-                        <i class="fa-solid fa-brain"></i>
-                        <div>
-                            <h3>AI & GenAI</h3>
-                            <p>Exploring intelligent solutions</p>
-                        </div>
-                    </div>
-
-                    <div class="mini-card">
-                        <i class="fa-solid fa-laptop-code"></i>
-                        <div>
-                            <h3>Development</h3>
-                            <p>Building practical applications</p>
-                        </div>
-                    </div>
-
-                    <div class="mini-card">
-                        <i class="fa-solid fa-lightbulb"></i>
-                        <div>
-                            <h3>Innovation</h3>
-                            <p>Turning ideas into solutions</p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- EDUCATION -->
-        <section id="education" class="section">
-
-            <div class="section-heading reveal">
-
-                <p class="section-label">// EDUCATION</p>
-
-                <h2>
-                    My academic
-                    <span>journey.</span>
-                </h2>
-
-            </div>
-
-            <div class="timeline">
-
-                <div class="timeline-item reveal">
-
-                    <div class="timeline-dot"></div>
-
-                    <div class="timeline-card">
-
-                        <div class="timeline-date">
-                            2024 — 2028
-                        </div>
-
-                        <h3>Bachelor of Technology</h3>
-
-                        <p class="highlight">
-                            Computer Science & Engineering
-                        </p>
-
-                        <p>
-                            Dhanekula Institute of Engineering and Technology
-                        </p>
-
-                        <div class="grade">
-                            <span>CGPA</span>
-                            <strong>7.9 / 10.0</strong>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="timeline-item reveal">
-
-                    <div class="timeline-dot"></div>
-
-                    <div class="timeline-card">
-
-                        <div class="timeline-date">
-                            Intermediate
-                        </div>
-
-                        <h3>MPC / Intermediate</h3>
-
-                        <p>
-                            Sri Chaitanya Junior College, Eluru
-                        </p>
-
-                        <div class="grade">
-                            <span>Percentage</span>
-                            <strong>96%</strong>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="timeline-item reveal">
-
-                    <div class="timeline-dot"></div>
-
-                    <div class="timeline-card">
-
-                        <div class="timeline-date">
-                            10th Class
-                        </div>
-
-                        <h3>Secondary Education</h3>
-
-                        <p>
-                            Government High School, Akunur
-                        </p>
-
-                        <div class="grade">
-                            <span>Percentage</span>
-                            <strong>84%</strong>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- SKILLS -->
-        <section id="skills" class="section">
-
-            <div class="section-heading reveal">
-
-                <p class="section-label">// SKILLS</p>
-
-                <h2>
-                    Tools I use to
-                    <span>build.</span>
-                </h2>
-
-            </div>
-
-            <div class="skills-container">
-
-                <div class="skills-panel reveal">
-
-                    <h3>Programming</h3>
-
-                    <div class="skill">
-
-                        <div class="skill-info">
-                            <span>C</span>
-                            <span>80%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="80%"></div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill">
-
-                        <div class="skill-info">
-                            <span>Java</span>
-                            <span>75%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="75%"></div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill">
-
-                        <div class="skill-info">
-                            <span>Python</span>
-                            <span>75%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="75%"></div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="skill">
-
-                        <div class="skill-info">
-                            <span>HTML</span>
-                            <span>85%</span>
-                        </div>
-
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85%"></div>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="tech-cloud reveal">
-
-                    <div class="tech-item">
-                        <i class="fa-solid fa-code"></i>
-                        <span>C</span>
-                    </div>
-
-                    <div class="tech-item">
-                        <i class="fa-brands fa-java"></i>
-                        <span>Java</span>
-                    </div>
-
-                    <div class="tech-item">
-                        <i class="fa-brands fa-python"></i>
-                        <span>Python</span>
-                    </div>
-
-                    <div class="tech-item">
-                        <i class="fa-brands fa-html5"></i>
-                        <span>HTML</span>
-                    </div>
-
-                    <div class="tech-item">
-                        <i class="fa-solid fa-brain"></i>
-                        <span>AI</span>
-                    </div>
-
-                    <div class="tech-item">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                        <span>GenAI</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- PROJECTS -->
-        <section id="projects" class="section projects-section">
-
-            <div class="section-heading reveal">
-
-                <p class="section-label">// PROJECTS</p>
-
-                <h2>
-                    Things I've
-                    <span>built.</span>
-                </h2>
-
-                <p class="heading-description">
-                    A selection of projects focused on solving practical
-                    problems using technology.
-                </p>
-
-            </div>
-
-
-            <div class="projects-grid">
-
-
-                <!-- Project 1 -->
-                <article class="project-card project-one reveal">
-
-                    <div class="project-top">
-
-                        <div class="project-icon">
-                            <i class="fa-solid fa-heart-pulse"></i>
-                        </div>
-
-                        <span class="project-number">01</span>
-
-                    </div>
-
-                    <div class="project-content">
-
-                        <p class="project-category">
-                            ARTIFICIAL INTELLIGENCE
-                        </p>
-
-                        <h3>GramCare AI</h3>
-
-                        <h4>
-                            Multilingual Rural Healthcare Screening Platform
-                        </h4>
-
-                        <p>
-                            AI-focused healthcare screening platform designed
-                            to support rural users through multilingual and
-                            accessible digital interaction.
-                        </p>
-
-                        <div class="tags">
-                            <span>AI</span>
-                            <span>Healthcare</span>
-                            <span>Multilingual</span>
-                        </div>
-
-                    </div>
-
-                    <div class="project-arrow">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-
-                </article>
-
-
-                <!-- Project 2 -->
-                <article class="project-card project-two reveal">
-
-                    <div class="project-top">
-
-                        <div class="project-icon">
-                            <i class="fa-solid fa-bug"></i>
-                        </div>
-
-                        <span class="project-number">02</span>
-
-                    </div>
-
-                    <div class="project-content">
-
-                        <p class="project-category">
-                            SOFTWARE DEVELOPMENT
-                        </p>
-
-                        <h3>DebugPro</h3>
-
-                        <h4>Program Debugging Tool</h4>
-
-                        <p>
-                            A software development tool designed to assist
-                            users in identifying and resolving programming
-                            errors, improving debugging and problem-solving
-                            efficiency.
-                        </p>
-
-                        <div class="tags">
-                            <span>Programming</span>
-                            <span>Debugging</span>
-                            <span>Problem Solving</span>
-                        </div>
-
-                    </div>
-
-                    <div class="project-arrow">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-
-                </article>
-
-
-                <!-- Project 3 -->
-                <article class="project-card project-three reveal">
-
-                    <div class="project-top">
-
-                        <div class="project-icon">
-                            <i class="fa-solid fa-cloud-sun"></i>
-                        </div>
-
-                        <span class="project-number">03</span>
-
-                    </div>
-
-                    <div class="project-content">
-
-                        <p class="project-category">
-                            WEB APPLICATION
-                        </p>
-
-                        <h3>Weather Forecast</h3>
-
-                        <h4>Weather Information Application</h4>
-
-                        <p>
-                            Application for checking weather information
-                            for different cities, providing convenient
-                            location-based forecast details.
-                        </p>
-
-                        <div class="tags">
-                            <span>HTML</span>
-                            <span>Weather</span>
-                            <span>Web</span>
-                        </div>
-
-                    </div>
-
-                    <div class="project-arrow">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- TRAINING -->
-        <section id="training" class="section">
-
-            <div class="section-heading reveal">
-
-                <p class="section-label">// TRAINING</p>
-
-                <h2>
-                    Learning beyond
-                    <span>classrooms.</span>
-                </h2>
-
-            </div>
-
-            <div class="training-card reveal">
-
-                <div class="training-logo">
-                    <i class="fa-solid fa-robot"></i>
-                </div>
-
-                <div class="training-content">
-
-                    <p class="section-label">
-                        AI & TECHNICAL TRAINING
-                    </p>
-
-                    <h3>Calibo AI Academy</h3>
-
-                    <p>
-                        Training focused on developing technical knowledge
-                        and practical skills relevant to programming and
-                        Artificial Intelligence.
-                    </p>
-
-                </div>
-
-                <div class="training-badge">
-                    <i class="fa-solid fa-certificate"></i>
-                    Training
-                </div>
+</html>
